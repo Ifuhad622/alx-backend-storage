@@ -1,7 +1,4 @@
--- Creates new table named 'users' to store unique user information.
--- L5: Drops 'users' table if it exists to avoid conflicts.
--- L7: Primary key column for unique 'id', with auto-increment
--- L8 to L9: 'user' details
+-- Creates a table with unique users.
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
