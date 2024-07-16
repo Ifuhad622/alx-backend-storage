@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Module: Task 15 - Advanced.
+Task 15: a python function
 """
 from pymongo import MongoClient
 
 
 def print_nginx_request_logs(nginx_collection):
     """
-    Prints Nginx request logs stats.
+    Prints stats about Nginx request logs.
     """
     print('{} logs'.format(nginx_collection.count_documents({})))
     print('Methods:')
@@ -54,5 +54,5 @@ def run():
     print_top_ips(client.logs.nginx)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     run()
